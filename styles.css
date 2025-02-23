@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #FFE3E3;
+    color: #2f5a7c;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 3rem 0;
+}
+
+h1 img {
+    width: 2.5rem; 
+    margin-left: 0.5rem; 
+}
+
+.container {
+    width: 50%;
+    background-color: #FFF8E8; /* Light pastel yellow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem; 
+    border-radius: 1.5rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+input {
+    height: 3rem; 
+    border-radius: 0.75rem; 
+    border: 1px solid #E0E0E0; /* Light gray border */
+    padding: 1rem; 
+    font-size: 1rem; 
+    width: 100%;
+    background-color: #FFE3E3;
+    color: #2f5a7c;
+}
+input:focus {
+    border-color: #98bdca; 
+    outline: none;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+button {
+    height: 3rem; 
+    border-radius: 0.75rem; 
+    border: none;
+    padding: 1rem; 
+    font-size: 1rem; 
+    margin: 1rem 0; 
+    font-weight: bold;
+    color: #2f5a7c;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2f5a7c;
+    color: #FEF9F2;
+    cursor: pointer;
+}
+
+ul {
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.25rem; 
+    padding: 0.5rem 0.5rem 0.5rem 3.125rem; 
+    user-select: none;
+    cursor: pointer;
+    background-color: #FFE3E3;
+    color: #2f5a7c;
+    position: relative;
+    border-radius: 0.75rem; 
+    margin-bottom: 0.25rem;
+    border: 1px solid #E0E0E0; /* Light gray border */
+    transition: background-color 0.3s ease;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 1.5625rem; 
+    width: 1.5625rem; 
+    border-radius: 50%;
+    background-image: url(images/uncheck\ icon.png);
+    background-size: cover;
+    background-position: center;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #2f5a7c;
+    background-color: #E8F0FE;
+}
+
+ul li.checked::before {
+    background-image: url(images/check\ icon.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 0.3125rem; 
+    border: 0.3125rem;
+    width: 2.5rem; 
+    height: 2.5rem; 
+    font-size: 1.75rem; 
+    /* color: #2f5a7c; */
+    color: #ff847e;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul li span:hover {
+    color: #e95851;
+}
+
+ul li .edit-icon {
+    position: absolute;
+    right: 1.75rem; 
+    top: 0.125rem;
+    width: 2.5rem; 
+    height: 2rem; 
+    font-size: 1.5rem; 
+    /* color: #2f5a7c; */
+    color: #cc8ee9;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+ul li .edit-icon:hover {
+    color: #743e8d;
+}
+
+/* Responsiveness */
+
+@media (max-width: 750px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 80%;
+    }
+    ul li{
+        font-size: 1rem;
+    }
+    ul li::before {
+        width: 1.125rem; 
+        height: 1.125rem;
+        top: 0.5rem; 
+        left: 0.625rem; 
+    }
+
+    ul li span {
+        top: 0.25rem;
+        width: 2.5rem; 
+        height: 2.5rem; 
+        font-size: 1.5rem; 
+    }
+
+    ul li .edit-icon {
+        font-size: 1.25rem; 
+        right: 1.5rem;
+        top: 0.1rem;
+    }
+}
