@@ -2,6 +2,9 @@
 
 A simple and visually appealing To-Do List web application that allows users to add, edit, delete, and mark tasks as completed. The application uses local storage to persist tasks, so your tasks remain even after refreshing the page.
 
+## Live Site Link
+[To Do List using Vanilla JS](https://todolist-js-vanilla.netlify.app/)
+
 **Desktop View**
 
 ![desktop view](images/desktopView.png)
