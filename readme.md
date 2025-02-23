@@ -4,11 +4,11 @@ A simple and visually appealing To-Do List web application that allows users to 
 
 **Desktop View**
 
-![alt text](image.png) 
+![desktop view](images/desktopView.png)
 
 **Mobile View**
 
-![alt text](image-3.png)
+![mobile view](images/mobileView.png)
 
 
 ## Features
